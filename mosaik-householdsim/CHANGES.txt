@@ -1,0 +1,38 @@
+Changelog
+=========
+
+2.1.0 - 2021-05-21
+------------------
+
+- [CHANGE] Updated to mosaik-api 3.0.
+
+
+2.0.3 – 2019-09-27
+------------------
+
+- [FIX] Fixed incompatibility with new arrow version.
+- [FIX] Fixed time offset bug.
+
+
+2.0.2 – 2014-09-22
+------------------
+
+- [CHANGE] Updated to mosaik-api 2.0.
+
+
+2.0.1 – 2014-06-26
+------------------
+
+- [CHANGE] Adopted latest changes of the mosaik low-level API.
+
+
+2.0 – 2014-03-26
+----------------
+
+- Updated API implementation for mosaik2.
+
+
+1.0 – 2014-01-30
+----------------
+
+- Initial release.
