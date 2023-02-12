@@ -1,0 +1,16 @@
+AUTHORS.txt
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+README.rst
+mosaik_csv.py
+requirements.txt
+setup.cfg
+setup.py
+tox.ini
+mosaik_csv.egg-info/PKG-INFO
+mosaik_csv.egg-info/SOURCES.txt
+mosaik_csv.egg-info/dependency_links.txt
+mosaik_csv.egg-info/entry_points.txt
+mosaik_csv.egg-info/requires.txt
+mosaik_csv.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+arrow>=1.0.0
+mosaik-api>=3

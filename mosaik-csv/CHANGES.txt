@@ -1,0 +1,45 @@
+Changelog
+=========
+
+1.2.0 - 2021-05-21
+------------------
+
+- [CHANGE] Updated to mosaik-api 3.0.
+
+
+1.1.0 - 2021-03-11
+------------------
+
+- [FEATURE] Allow to define the delimiter.
+- [FEATURE] Allow to define the date format.
+
+
+1.0.4 - 2021-03-04
+------------------
+
+- [CHANGE] Adjustment to new arrow API.
+
+
+1.0.3 – 2019-10-10
+------------------
+
+- [CHANGE] Added closing of input file.
+- [CHANGE] Adjustment to new arrow API.
+
+
+1.0.2 – 2014-09-22
+------------------
+
+- [CHANGE] Updated to mosaik-api 2.0.
+
+
+1.0.1 – 2014-06-23
+------------------
+
+- [CHANGE] Updated to mosaik-api 2.0a3.
+
+
+1.0 – 2014-03-26
+----------------
+
+- Initial release
