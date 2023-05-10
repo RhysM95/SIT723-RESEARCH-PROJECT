@@ -1,0 +1,675 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 144-420-199
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_voltage_1 HTTP/1.1" 200 87290
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_current_1 HTTP/1.1" 200 14101
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_power_1 HTTP/1.1" 200 54992
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_energy_1 HTTP/1.1" 200 15928
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_tde_1 HTTP/1.1" 200 15091
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_voltage_2 HTTP/1.1" 200 87680
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_current_2 HTTP/1.1" 200 268
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_power_2 HTTP/1.1" 200 266
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_energy_2 HTTP/1.1" 200 541
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_tde_2 HTTP/1.1" 200 303
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_voltage_3 HTTP/1.1" 200 89968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_current_3 HTTP/1.1" 200 230
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_power_3 HTTP/1.1" 200 229
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_energy_3 HTTP/1.1" 200 343
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_tde_3 HTTP/1.1" 200 269
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_voltage_4 HTTP/1.1" 200 86418
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_current_4 HTTP/1.1" 200 13117
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_power_4 HTTP/1.1" 200 63169
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_energy_4 HTTP/1.1" 200 5692
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_tde_4 HTTP/1.1" 200 5597
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): homeassistant.kevin-lee.co.uk:8392
+DEBUG:urllib3.connectionpool:https://homeassistant.kevin-lee.co.uk:8392 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.delta_max_030030_dc_input HTTP/1.1" 401 17
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 14:22:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 14:24:44] "GET /history HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 14:24:45] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_voltage_1 HTTP/1.1" 200 87290
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_current_1 HTTP/1.1" 200 14101
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_power_1 HTTP/1.1" 200 54992
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_energy_1 HTTP/1.1" 200 15928
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_tde_1 HTTP/1.1" 200 15091
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_voltage_2 HTTP/1.1" 200 87680
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_current_2 HTTP/1.1" 200 268
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_power_2 HTTP/1.1" 200 266
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_energy_2 HTTP/1.1" 200 541
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_tde_2 HTTP/1.1" 200 303
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_voltage_3 HTTP/1.1" 200 89968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_current_3 HTTP/1.1" 200 230
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_power_3 HTTP/1.1" 200 229
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_energy_3 HTTP/1.1" 200 343
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_tde_3 HTTP/1.1" 200 269
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_voltage_4 HTTP/1.1" 200 86418
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_current_4 HTTP/1.1" 200 13117
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_power_4 HTTP/1.1" 200 63169
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_energy_4 HTTP/1.1" 200 5692
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_tde_4 HTTP/1.1" 200 5597
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): homeassistant.kevin-lee.co.uk:8392
+DEBUG:urllib3.connectionpool:https://homeassistant.kevin-lee.co.uk:8392 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.delta_max_030030_dc_input HTTP/1.1" 401 17
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 14:28:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+ERROR:root:Error occurred while fetching history data
+Traceback (most recent call last):
+  File "C:\Users\rhysm\Code\community-household-data-analysis\app\Project.py", line 143, in history
+    return render_template('history.html', households=households, entities=entities, data=data, selected_entities=selected_entities, len=len, dash_app=dash_app)
+  File "C:\Users\rhysm\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\templating.py", line 149, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\rhysm\AppData\Local\Programs\Python\Python39\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\rhysm\AppData\Local\Programs\Python\Python39\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\rhysm\AppData\Local\Programs\Python\Python39\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\rhysm\AppData\Local\Programs\Python\Python39\lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\rhysm\AppData\Local\Programs\Python\Python39\lib\site-packages\jinja2\environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\rhysm\AppData\Local\Programs\Python\Python39\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\rhysm\Code\community-household-data-analysis\app\templates\history.html", line 24, in template
+    var households = {{ data|tojson }};
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 14:29:46] "[35m[1mGET /history HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\rhysm\\Code\\community-household-data-analysis\\app\\Project.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 144-420-199
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_voltage_1 HTTP/1.1" 200 87290
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_current_1 HTTP/1.1" 200 14101
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_power_1 HTTP/1.1" 200 54992
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_energy_1 HTTP/1.1" 200 15928
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_tde_1 HTTP/1.1" 200 15091
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_voltage_2 HTTP/1.1" 200 87680
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_current_2 HTTP/1.1" 200 268
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_power_2 HTTP/1.1" 200 266
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_energy_2 HTTP/1.1" 200 541
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_tde_2 HTTP/1.1" 200 303
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_voltage_3 HTTP/1.1" 200 89968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_current_3 HTTP/1.1" 200 230
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_power_3 HTTP/1.1" 200 229
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_energy_3 HTTP/1.1" 200 343
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_tde_3 HTTP/1.1" 200 269
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_voltage_4 HTTP/1.1" 200 86418
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_current_4 HTTP/1.1" 200 13117
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_power_4 HTTP/1.1" 200 63169
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_energy_4 HTTP/1.1" 200 5692
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_tde_4 HTTP/1.1" 200 5597
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): homeassistant.kevin-lee.co.uk:8392
+DEBUG:urllib3.connectionpool:https://homeassistant.kevin-lee.co.uk:8392 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.delta_max_030030_dc_input HTTP/1.1" 200 83197
+ERROR:root:Error occurred while fetching history data
+Traceback (most recent call last):
+  File "C:\Users\rhysm\Code\community-household-data-analysis\app\Project.py", line 144, in history
+    return render_template('history.html', households=households, entities=entities, data=data, selected_entities=selected_entities, len=len, dash_app=dash_app)
+  File "C:\Users\rhysm\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\templating.py", line 149, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\rhysm\AppData\Local\Programs\Python\Python39\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\rhysm\AppData\Local\Programs\Python\Python39\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\rhysm\AppData\Local\Programs\Python\Python39\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\rhysm\AppData\Local\Programs\Python\Python39\lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\rhysm\AppData\Local\Programs\Python\Python39\lib\site-packages\jinja2\environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\rhysm\AppData\Local\Programs\Python\Python39\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\rhysm\Code\community-household-data-analysis\app\templates\history.html", line 24, in template
+    var households = {{ data|tojson }};
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 14:38:36] "[35m[1mGET /history HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_voltage_1 HTTP/1.1" 200 87290
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_current_1 HTTP/1.1" 200 14101
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_power_1 HTTP/1.1" 200 54992
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_energy_1 HTTP/1.1" 200 15928
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_tde_1 HTTP/1.1" 200 15091
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_voltage_2 HTTP/1.1" 200 87680
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_current_2 HTTP/1.1" 200 268
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_power_2 HTTP/1.1" 200 266
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_energy_2 HTTP/1.1" 200 541
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_tde_2 HTTP/1.1" 200 303
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_voltage_3 HTTP/1.1" 200 89968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_current_3 HTTP/1.1" 200 230
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_power_3 HTTP/1.1" 200 229
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_energy_3 HTTP/1.1" 200 343
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_tde_3 HTTP/1.1" 200 269
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_voltage_4 HTTP/1.1" 200 86418
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_current_4 HTTP/1.1" 200 13117
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_power_4 HTTP/1.1" 200 63169
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_energy_4 HTTP/1.1" 200 5692
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_tde_4 HTTP/1.1" 200 5597
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): homeassistant.kevin-lee.co.uk:8392
+DEBUG:urllib3.connectionpool:https://homeassistant.kevin-lee.co.uk:8392 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.delta_max_030030_dc_input HTTP/1.1" 200 83197
+INFO:werkzeug: * Detected change in 'C:\\Users\\rhysm\\Code\\community-household-data-analysis\\app\\Project.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 144-420-199
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_voltage_1 HTTP/1.1" 200 87290
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_current_1 HTTP/1.1" 200 14101
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_power_1 HTTP/1.1" 200 54992
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_energy_1 HTTP/1.1" 200 15928
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_tde_1 HTTP/1.1" 200 15091
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_voltage_2 HTTP/1.1" 200 87680
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_current_2 HTTP/1.1" 200 268
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_power_2 HTTP/1.1" 200 266
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_energy_2 HTTP/1.1" 200 541
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_tde_2 HTTP/1.1" 200 303
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_voltage_3 HTTP/1.1" 200 89968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_current_3 HTTP/1.1" 200 230
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_power_3 HTTP/1.1" 200 229
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_energy_3 HTTP/1.1" 200 343
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_tde_3 HTTP/1.1" 200 269
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_voltage_4 HTTP/1.1" 200 86418
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_current_4 HTTP/1.1" 200 13117
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_power_4 HTTP/1.1" 200 63169
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_energy_4 HTTP/1.1" 200 5692
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_tde_4 HTTP/1.1" 200 5597
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): homeassistant.kevin-lee.co.uk:8392
+DEBUG:urllib3.connectionpool:https://homeassistant.kevin-lee.co.uk:8392 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.delta_max_030030_dc_input HTTP/1.1" 200 83197
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_voltage_1 HTTP/1.1" 200 87290
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_current_1 HTTP/1.1" 200 14101
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_power_1 HTTP/1.1" 200 54992
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 144-420-199
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_1 HTTP/1.1" 200 249
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_1 HTTP/1.1" 200 248
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_1 HTTP/1.1" 200 250
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_1 HTTP/1.1" 200 259
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_1 HTTP/1.1" 200 267
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_2 HTTP/1.1" 200 248
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_2 HTTP/1.1" 200 249
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_2 HTTP/1.1" 200 247
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_2 HTTP/1.1" 200 258
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_2 HTTP/1.1" 200 260
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_3 HTTP/1.1" 200 250
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_3 HTTP/1.1" 200 246
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_3 HTTP/1.1" 200 246
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_3 HTTP/1.1" 200 259
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_3 HTTP/1.1" 200 262
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_4 HTTP/1.1" 200 252
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_4 HTTP/1.1" 200 251
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_4 HTTP/1.1" 200 252
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_4 HTTP/1.1" 200 261
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_4 HTTP/1.1" 200 270
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): homeassistant.kevin-lee.co.uk:8392
+DEBUG:urllib3.connectionpool:https://homeassistant.kevin-lee.co.uk:8392 "GET /api/states/sensor.delta_max_030030_dc_input HTTP/1.1" 200 270
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 14:43:39] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 14:43:39] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 14:43:39] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 14:43:39] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 14:43:40] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\rhysm\\Code\\community-household-data-analysis\\app\\Project.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 144-420-199
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_1 HTTP/1.1" 200 248
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_1 HTTP/1.1" 200 248
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_1 HTTP/1.1" 200 247
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_1 HTTP/1.1" 200 261
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_1 HTTP/1.1" 200 267
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_2 HTTP/1.1" 200 250
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_2 HTTP/1.1" 200 249
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_2 HTTP/1.1" 200 247
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_2 HTTP/1.1" 200 258
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_2 HTTP/1.1" 200 260
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_3 HTTP/1.1" 200 248
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_3 HTTP/1.1" 200 246
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_3 HTTP/1.1" 200 246
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_3 HTTP/1.1" 200 259
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_3 HTTP/1.1" 200 262
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_4 HTTP/1.1" 200 254
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_4 HTTP/1.1" 200 252
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_4 HTTP/1.1" 200 252
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_4 HTTP/1.1" 200 264
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_4 HTTP/1.1" 200 271
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): homeassistant.kevin-lee.co.uk:8392
+DEBUG:urllib3.connectionpool:https://homeassistant.kevin-lee.co.uk:8392 "GET /api/states/sensor.delta_max_030030_dc_input HTTP/1.1" 200 270
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 14:51:35] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 14:51:35] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 14:51:35] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 14:51:36] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 14:51:36] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\rhysm\\Code\\community-household-data-analysis\\app\\Project.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 144-420-199
+INFO:werkzeug: * Detected change in 'C:\\Users\\rhysm\\Code\\community-household-data-analysis\\app\\Project.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 144-420-199
+INFO:werkzeug: * Detected change in 'C:\\Users\\rhysm\\Code\\community-household-data-analysis\\app\\Project.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 144-420-199
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_1 HTTP/1.1" 200 248
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_1 HTTP/1.1" 200 248
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_1 HTTP/1.1" 200 249
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_1 HTTP/1.1" 200 260
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_1 HTTP/1.1" 200 267
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_2 HTTP/1.1" 200 247
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_2 HTTP/1.1" 200 249
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_2 HTTP/1.1" 200 247
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_2 HTTP/1.1" 200 258
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_2 HTTP/1.1" 200 260
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_3 HTTP/1.1" 200 250
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_3 HTTP/1.1" 200 246
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_3 HTTP/1.1" 200 246
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_3 HTTP/1.1" 200 259
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_3 HTTP/1.1" 200 262
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_4 HTTP/1.1" 200 252
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_4 HTTP/1.1" 200 250
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_4 HTTP/1.1" 200 251
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_4 HTTP/1.1" 200 262
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_4 HTTP/1.1" 200 270
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): homeassistant.kevin-lee.co.uk:8392
+DEBUG:urllib3.connectionpool:https://homeassistant.kevin-lee.co.uk:8392 "GET /api/states/sensor.delta_max_030030_dc_input HTTP/1.1" 200 270
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 15:32:24] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 15:32:24] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 15:32:24] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 15:32:25] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 15:32:25] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 144-420-199
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_1 HTTP/1.1" 200 250
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_1 HTTP/1.1" 200 247
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_1 HTTP/1.1" 200 248
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_1 HTTP/1.1" 200 260
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_1 HTTP/1.1" 200 265
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_2 HTTP/1.1" 200 250
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_2 HTTP/1.1" 200 249
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_2 HTTP/1.1" 200 247
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_2 HTTP/1.1" 200 258
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_2 HTTP/1.1" 200 260
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_3 HTTP/1.1" 200 248
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_3 HTTP/1.1" 200 246
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_3 HTTP/1.1" 200 246
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_3 HTTP/1.1" 200 259
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_3 HTTP/1.1" 200 262
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_4 HTTP/1.1" 200 253
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_4 HTTP/1.1" 200 252
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_4 HTTP/1.1" 200 253
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_4 HTTP/1.1" 200 262
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_4 HTTP/1.1" 200 270
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): homeassistant.kevin-lee.co.uk:8392
+DEBUG:urllib3.connectionpool:https://homeassistant.kevin-lee.co.uk:8392 "GET /api/states/sensor.delta_max_030030_dc_input HTTP/1.1" 200 270
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 15:33:29] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 15:33:29] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 15:33:29] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 15:33:30] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\rhysm\\Code\\community-household-data-analysis\\app\\Project.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 144-420-199
+INFO:werkzeug: * Detected change in 'C:\\Users\\rhysm\\Code\\community-household-data-analysis\\app\\Project.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 144-420-199
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_1 HTTP/1.1" 200 248
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_1 HTTP/1.1" 200 248
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_1 HTTP/1.1" 200 250
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_1 HTTP/1.1" 200 262
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_1 HTTP/1.1" 200 268
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_2 HTTP/1.1" 200 251
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_2 HTTP/1.1" 200 249
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_2 HTTP/1.1" 200 247
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_2 HTTP/1.1" 200 258
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_2 HTTP/1.1" 200 260
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_3 HTTP/1.1" 200 251
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_3 HTTP/1.1" 200 246
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_3 HTTP/1.1" 200 246
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_3 HTTP/1.1" 200 259
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_3 HTTP/1.1" 200 262
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_4 HTTP/1.1" 200 252
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_4 HTTP/1.1" 200 251
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_4 HTTP/1.1" 200 252
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_4 HTTP/1.1" 200 262
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_4 HTTP/1.1" 200 270
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): homeassistant.kevin-lee.co.uk:8392
+DEBUG:urllib3.connectionpool:https://homeassistant.kevin-lee.co.uk:8392 "GET /api/states/sensor.delta_max_030030_dc_input HTTP/1.1" 200 270
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 15:34:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 15:34:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_1 HTTP/1.1" 200 250
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_1 HTTP/1.1" 200 248
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_1 HTTP/1.1" 200 248
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_1 HTTP/1.1" 200 262
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_1 HTTP/1.1" 200 268
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_2 HTTP/1.1" 200 250
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_2 HTTP/1.1" 200 249
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_2 HTTP/1.1" 200 247
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_2 HTTP/1.1" 200 258
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_2 HTTP/1.1" 200 260
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_3 HTTP/1.1" 200 248
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_1 HTTP/1.1" 200 250
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_3 HTTP/1.1" 200 246
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_1 HTTP/1.1" 200 248
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_3 HTTP/1.1" 200 246
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_1 HTTP/1.1" 200 248
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_3 HTTP/1.1" 200 259
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_1 HTTP/1.1" 200 262
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_3 HTTP/1.1" 200 262
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_1 HTTP/1.1" 200 268
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_4 HTTP/1.1" 200 255
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_2 HTTP/1.1" 200 251
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_4 HTTP/1.1" 200 251
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_2 HTTP/1.1" 200 249
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_4 HTTP/1.1" 200 250
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_2 HTTP/1.1" 200 247
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_4 HTTP/1.1" 200 262
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_2 HTTP/1.1" 200 258
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_4 HTTP/1.1" 200 270
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): homeassistant.kevin-lee.co.uk:8392
+DEBUG:urllib3.connectionpool:https://homeassistant.kevin-lee.co.uk:8392 "GET /api/states/sensor.delta_max_030030_dc_input HTTP/1.1" 200 270
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 15:35:03] "GET /schematic HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_2 HTTP/1.1" 200 260
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 15:35:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_3 HTTP/1.1" 200 248
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_3 HTTP/1.1" 200 246
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_3 HTTP/1.1" 200 246
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_3 HTTP/1.1" 200 259
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_3 HTTP/1.1" 200 262
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_4 HTTP/1.1" 200 253
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_4 HTTP/1.1" 200 251
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_4 HTTP/1.1" 200 251
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_voltage_1 HTTP/1.1" 200 87290
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_4 HTTP/1.1" 200 262
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_4 HTTP/1.1" 200 270
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): homeassistant.kevin-lee.co.uk:8392
+DEBUG:urllib3.connectionpool:https://homeassistant.kevin-lee.co.uk:8392 "GET /api/states/sensor.delta_max_030030_dc_input HTTP/1.1" 200 270
+INFO:werkzeug:127.0.0.1 - - [06/May/2023 15:35:09] "GET /fetch_data HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_current_1 HTTP/1.1" 200 14101
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_power_1 HTTP/1.1" 200 54992
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_energy_1 HTTP/1.1" 200 15928
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_tde_1 HTTP/1.1" 200 15091
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_1 HTTP/1.1" 200 248
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_1 HTTP/1.1" 200 248
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_voltage_2 HTTP/1.1" 200 87680
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_1 HTTP/1.1" 200 247
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_current_2 HTTP/1.1" 200 268
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_1 HTTP/1.1" 200 262
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_power_2 HTTP/1.1" 200 266
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_1 HTTP/1.1" 200 268
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_energy_2 HTTP/1.1" 200 541
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_voltage_2 HTTP/1.1" 200 248
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_tde_2 HTTP/1.1" 200 303
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_current_2 HTTP/1.1" 200 249
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_power_2 HTTP/1.1" 200 247
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_energy_2 HTTP/1.1" 200 258
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/history/period/2023-04-26T00:00:00+00:00?end_time=2023-04-27T00%3A00%3A00%2B00%3A00&filter_entity_id=sensor.athom_smart_plug_v2_voltage_3 HTTP/1.1" 200 89968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+DEBUG:urllib3.connectionpool:https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443 "GET /api/states/sensor.athom_smart_plug_v2_tde_2 HTTP/1.1" 200 260
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): 9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa:443
+INFO:werkzeug: * Detected change in 'C:\\Users\\rhysm\\Code\\community-household-data-analysis\\app\\Project.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat

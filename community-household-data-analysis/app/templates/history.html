@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Historical Simulation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Smart Home Energy Monitoring Historical Simulation</h1>
+    <!-- Navigation Menu -->
+    <div class="nav-menu">
+        <a href="/">Simulation</a>
+        <a href="/schematic">Schematic</a>
+        <a href="/history">Historical Simulation</a>
+    </div>
+    <form action="{{ url_for('history') }}" method="get">
+        <label for="start_date">Start date:</label>
+        <input type="date" id="start_date" name="start_date" required>
+        <label for="end_date">End date:</label>
+        <input type="date" id="end_date" name="end_date" required>
+        <input type="submit" value="Submit">
+    </form>
+    {% for household in households %}
+    <div class="household-container">
+        <h2>Household {{ loop.index }} </h2>
+        <div class="entity-chart" id="{{ household }}"></div>
+    </div>
+    {% endfor %}
+    <script>
+        var households = {{ data|tojson }};
+        var colors = {
+            'voltage': 'red',
+            'current': 'blue',
+            'power': 'green',
+            'energy': 'purple',
+            'tde': 'orange',
+            'Solar PV': 'yellow'
+        };
+        var displayNames = {
+            'voltage': 'Voltage',
+            'current': 'Current',
+            'power': 'Power',
+            'energy': 'Energy',
+            'tde': 'Total Daily Energy',
+            'Solar PV': 'Solar PV'
+        };
+        var entity_units = {
+            'voltage': 'V',
+            'current': 'A',
+            'power': 'W',
+            'energy': 'kWh',
+            'tde': 'kWh',
+            'Solar PV': 'W'
+        };
+
+        function plot_data(data) {
+            console.log('Plotting data:', data);
+            Object.keys(data).forEach(function(household) {
+                var household_data = data[household];
+                var traces = [];
+                Object.keys(household_data).forEach(function(entity) {
+                    var entity_data = household_data[entity];
+                    console.log(`Plotting ${household} ${entity} data:`, entity_data);
+                    var trace = {
+                        x: entity_data.map(point => point[0]),
+                        y: entity_data.map(point => entity === 'voltage' ? point[1] / 4 : point[1]),
+                        mode: 'lines+markers',
+                        marker: {
+                            size: 8,
+                            color: colors[entity]
+                        },
+                        name: displayNames[entity] + ' (' + entity_units[entity] + ')'
+                    };
+                    traces.push(trace);
+                });
+                var layout = {
+                    title: household,
+                    xaxis: {
+                        title: 'Time',
+                        type: 'date',
+                        tickformat: '%m-%d %H:%M'
+                        },
+                    yaxis: {title: 'Value',},
+                    margin: {l: 50, r: 50, b: 50, t: 50},
+                };
+                Plotly.react(household, traces, layout);
+            });
+        }
+
+        plot_data(households);
+
+    </script>    
+</div>

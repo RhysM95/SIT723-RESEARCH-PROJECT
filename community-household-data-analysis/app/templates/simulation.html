@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simulation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Smart Home Energy Monitoring Simulation</h1>
+    <!-- Navigation Menu -->
+    <div class="nav-menu">
+        <a href="/">Simulation</a>
+        <a href="/schematic">Schematic</a>
+        <a href="/history">Historical Simulation</a>
+    </div>
+    {% for household in households %}
+    <div class="household-container">
+        <h2>Household {{ loop.index }} </h2>
+        <div class="entity-chart" id="{{ household }}"></div>
+    </div>
+    {% endfor %}
+    <script>
+        var households = {{ data|tojson }};
+        var colors = {
+            'voltage': 'red',
+            'current': 'blue',
+            'power': 'green',
+            'energy': 'purple',
+            'tde': 'orange',
+            'Solar PV': 'yellow'
+        };
+        var displayNames = {
+            'voltage': 'Voltage',
+            'current': 'Current',
+            'power': 'Power',
+            'energy': 'Energy',
+            'tde': 'Total Daily Energy',
+            'Solar PV': 'Solar PV'
+        };
+        var entity_units = {
+            'voltage': 'V',
+            'current': 'A',
+            'power': 'W',
+            'energy': 'kWh',
+            'tde': 'kWh',
+            'Solar PV': 'W'
+        };
+
+        function plot_data(data) {
+            console.log('Plotting data:', data);
+            Object.keys(data).forEach(function(household) {
+                var household_data = data[household];
+                var traces = [];
+                Object.keys(household_data).forEach(function(entity) {
+                    var entity_data = household_data[entity];
+                    console.log(`Plotting ${household} ${entity} data:`, entity_data);
+                    var trace = {
+                        x: entity_data.map(point => new Date(point[0] * 1000).toLocaleString('en-US', { timeZone: 'Australia/Melbourne', hour: '2-digit', minute: '2-digit', second: '2-digit' })),
+                        y: entity_data.map(point => point[1]),
+                        mode: 'lines+markers',
+                        marker: {
+                            size: 8,
+                            color: colors[entity]
+                        },
+                        name: displayNames[entity] + ' (' + entity_units[entity] + ')'
+                    };
+                    traces.push(trace);
+                });
+                var layout = {
+                    title: household,
+                    xaxis: {title: 'Time'},
+                    yaxis: {title: 'Value',},
+                    margin: {l: 50, r: 50, b: 50, t: 50},
+                };
+                Plotly.react(household, traces, layout);
+            });
+        }
+
+        plot_data(households);
+
+        function update_data() {
+            console.log('Simulation File - Fetching data...');
+            fetch('/fetch_data')
+                .then(response => {
+                    console.log('Simulation File - Received response:', response);
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Simulation File - Fetched data:', data);
+                    plot_data(data);
+                })
+                .catch(error => {
+                    console.error('Simulation File - Error fetching data:', error);
+                });
+        }
+
+        setInterval(update_data, 15000);
+    </script>
+</div>
