@@ -10,14 +10,18 @@
 </head>
 <body>
     <h1>Smart Home Energy Monitoring Schematic</h1>
-    <!-- Navigation Menu -->
     <div class="nav-menu">
         <a href="/">Simulation</a>
         <a href="/schematic">Schematic</a>
         <a href="/history">Historical Simulation</a>
     </div>
     <div id="schematic"></div>
+    <div id="sidebar" onclick="toggleSidebar()">&#9776;</div>
+    <div id="microgrid-menu">
+        <div id="microgrid-menu-close" onclick="toggleSidebar()">&times;</div>
+    </div>
     <div id="trend"></div>
+    
     <script>
         var households = {{ data|tojson }};
         const entityColors = {
@@ -26,7 +30,10 @@
             'power': 'green',
             'energy': 'purple',
             'tde': 'orange',
-            'Solar PV': 'yellow'
+            'Solar PV': 'yellow',
+            'Microgrid 1': '#FFA07A',
+            'Microgrid 2': '#20B2AA',
+            'Main Grid': '#DC143C'
         };
         const entityUnits = {
             'voltage': 'V',
@@ -34,7 +41,10 @@
             'power': 'W',
             'energy': 'kWh',
             'tde': 'kWh',
-            'Solar PV': 'W'
+            'Solar PV': 'W',
+            'Microgrid 1': '',
+            'Microgrid 2': '',
+            'Main Grid': ''
         };
         const entityLabels = {
             'voltage': 'Voltage',
@@ -42,42 +52,157 @@
             'power': 'Power',
             'energy': 'Energy',
             'tde': 'Total Daily Energy',
-            'Solar PV': 'Solar PV'
+            'Solar PV': 'Solar PV',
+            'Microgrid 1': 'Microgrid 1',
+            'Microgrid 2': 'Microgrid 2',
+            'Main Grid': 'Main Grid'
         };
 
         const nodes = [];
         const links = [];
+        const width = 1000;
+        const height = 650;
 
         function update_entity_data(data) {
-            nodes.length = 0;
-            links.length = 0;
+            nodes.length = 0;  
+            links.length = 0;  
+            
+            // Add nodes for two microgrids and one main grid, with their names and coordinates
+            nodes.push({ id: 'Microgrid 1', group: 3, value: 'Microgrid 1', x: width / 4, y: 250 }); 
+            nodes.push({ id: 'Microgrid 2', group: 3, value: 'Microgrid 2', x: (3 * width) / 4, y: 250 }); 
+            nodes.push({ id: 'Main Grid', group: 4, value: 'Main Grid', x: width / 2, y: 10 }); 
 
-
+            // Add links between the microgrids and the main grid
+            links.push({ source: 'Microgrid 1', target: 'Main Grid' });
+            links.push({ source: 'Microgrid 2', target: 'Main Grid' });
+            
+            // Loop through each household in the data and add their nodes and links
             Object.keys(data).forEach((household, i) => {
-                nodes.push({ id: household, group: 1, value: household });
+                const y = height / 10 + i * 30;
+                const x = i % 2 ? (3 * width) / 4 : width / 4;
+                
+                // Add a node for the household with its name and coordinates
+                nodes.push({ id: household, group: 1, value: household, x, y });
 
+                // Add a link between the household and its corresponding microgrid
+                const microgridId = i % 2 ? 'Microgrid 2' : 'Microgrid 1';
+                links.push({ source: household, target: microgridId });
+
+                // Loop through each entity in the household's data and add its nodes and links
                 Object.keys(data[household]).forEach((entity, j) => {
                     const entityId = household + '_' + entity;
                     const mostRecentValue = data[household][entity][data[household][entity].length - 1][1].toFixed(2);
-                    nodes.push({ id: entityId, group: 2, value: mostRecentValue });
-                    links.push({ source: household, target: entityId });
+                    const offsetY = (j + 1) * 10;
+                    nodes.push({ id: entityId, group: 2, value: mostRecentValue, x: x, y: y + offsetY });
+                    links.push({ source: entityId, target: household });
                 });
             });
         }
 
         update_entity_data({{ data | tojson }});
 
-        const width = 750;
-        const height = 750;
+        function update_microgrid_menu(data) {
+            const menuDiv = document.getElementById("microgrid-menu");
+            menuDiv.innerHTML = "";
+
+            const closeBtn = document.createElement("div");
+            closeBtn.id = "microgrid-menu-close";
+            closeBtn.innerHTML = "&times;";
+            closeBtn.onclick = toggleSidebar;
+            menuDiv.appendChild(closeBtn);
+
+            const microgridContainer = document.createElement("div");
+            microgridContainer.classList.add("microgrid-container");
+            menuDiv.appendChild(microgridContainer);
+
+            const microgrids = ['Microgrid 1', 'Microgrid 2'];
+            let microgridTotals = {
+                'Microgrid 1': { solar: 0, power: 0 },
+                'Microgrid 2': { solar: 0, power: 0 }
+            };
+
+            microgrids.forEach(microgrid => {
+                const microgridDiv = document.createElement("div");
+                microgridDiv.classList.add("microgrid-section");
+                microgridContainer.appendChild(microgridDiv);
+
+                const microgridTitle = document.createElement("h2");
+                microgridTitle.innerText = microgrid;
+                microgridDiv.appendChild(microgridTitle);
+
+                Object.keys(data).forEach((household, i) => {
+                    if ((microgrid === 'Microgrid 1' && i % 2 === 0) || (microgrid === 'Microgrid 2' && i % 2 !== 0)) {
+                        const householdDiv = document.createElement("div");
+                        householdDiv.classList.add("household-section");
+
+                        const householdTitle = document.createElement("h3");
+                        householdTitle.innerText = household;
+                        householdDiv.appendChild(householdTitle);
+
+                        const solarPV = data[household]["Solar PV"][data[household]["Solar PV"].length - 1][1].toFixed(2);
+                        const power = data[household]["power"][data[household]["power"].length - 1][1].toFixed(2);
+                        const surplusDeficit = solarPV - power;
+
+                        const solarPVElement = document.createElement("p");
+                        solarPVElement.innerText = "Solar PV: " + solarPV + " W";
+                        householdDiv.appendChild(solarPVElement);
+
+                        const powerElement = document.createElement("p");
+                        powerElement.innerText = "Power: " + power + " W";
+                        householdDiv.appendChild(powerElement);
+
+                        const surplusDeficitElement = document.createElement("p");
+                        surplusDeficitElement.innerText = surplusDeficit >= 0 ? "Surplus: " : "Deficit: ";
+                        surplusDeficitElement.innerText += Math.abs(surplusDeficit).toFixed(2) + " W";
+                        surplusDeficitElement.style.color = surplusDeficit >= 0 ? "green" : "red";
+                        householdDiv.appendChild(surplusDeficitElement);
+
+                        microgridDiv.appendChild(householdDiv);
+
+                        // Add solar and power values to the corresponding microgrid total
+                        const microgridId = i % 2 ? 'Microgrid 2' : 'Microgrid 1';
+                        microgridTotals[microgridId].solar += parseFloat(solarPV);
+                        microgridTotals[microgridId].power += parseFloat(power);
+                    }
+                });
+            });
+
+            const microgridTotalDiv = document.createElement("div");
+            microgridTotalDiv.classList.add("microgrid-total");
+            menuDiv.appendChild(microgridTotalDiv);
+
+            // Create the totals box
+            const totalsBox = document.createElement("div");
+            totalsBox.classList.add("total-box");
+            menuDiv.appendChild(totalsBox);
+
+            microgrids.forEach(microgrid => {
+                const microgridTotalSolar = document.createElement("p");
+                microgridTotalSolar.innerText = "Total Solar Generation " + microgrid + ": " + microgridTotals[microgrid].solar.toFixed(2) + " W";
+                totalsBox.appendChild(microgridTotalSolar);
+
+                const microgridTotalPower = document.createElement("p");
+                microgridTotalPower.innerText = "Total Power Usage" + microgrid + ": " + microgridTotals[microgrid].power.toFixed(2) + " W";
+                totalsBox.appendChild(microgridTotalPower);
+            });
+        }
+
+        update_microgrid_menu({{ data | tojson }});
+
+        // Add this function to toggle sidebar display
+        function toggleSidebar() {
+            const microgridMenu = document.getElementById("microgrid-menu");
+            microgridMenu.style.display = microgridMenu.style.display === "none" ? "block" : "none";
+        }
 
         const color = d3.scaleOrdinal(d3.schemeCategory10);
 
         const simulation = d3.forceSimulation(nodes)
-            .force("link", d3.forceLink(links).id(d => d.id).distance(80)) // Link line length
-            .force("charge", d3.forceManyBody().strength(-500))
+            .force("link", d3.forceLink(links).id(d => d.id).distance(80))
+            .force("charge", d3.forceManyBody().strength(-350))
             .force("center", d3.forceCenter(width / 2, height / 2))
-            .force("x", d3.forceX().strength(0.2))
-            .force("y", d3.forceY().strength(0.2));
+            .force("x", d3.forceX().strength(0.2).x(d => d.x))
+            .force("y", d3.forceY().strength(0.2).y(d => d.y))
 
         const svg = d3.select("#schematic")
             .append("svg")
@@ -86,7 +211,7 @@
             .attr("viewBox", `0 0 ${width} ${height}`)
             .attr("preserveAspectRatio", "xMidYMid meet");
 
-        const g = svg.append("g");
+        const g = svg.append("g")
 
         let link = g.append("g")
             .attr("stroke", "#999")
@@ -101,8 +226,17 @@
             .selectAll("circle")
             .data(nodes)
             .join("circle")
-            .attr("r", d => d.group === 1 ? 40 : 20) // Node Size
-            .attr("fill", d => d.group === 1 ? color(d.group) : entityColors[d.id.split('_')[1]])
+            .attr("r", d => {  // Set the radius of the circles based on their group
+                if (d.group === 1) return 30; // Households
+                else if (d.group === 3) return 40; //Microgrids
+                else if (d.group === 4) return 60; //Main Grid
+                else return 20; // Sensor entities
+            })
+            .attr("fill", d => {
+                if (d.group === 1) return color(d.group);
+                else if (d.group === 3 || d.group === 4) return entityColors[d.id];
+                else return entityColors[d.id.split('_')[1]];
+            })
             .call(d3.drag()
                 .on("start", dragstarted)
                 .on("drag", dragged)
@@ -115,15 +249,19 @@
             .attr("text-anchor", "middle")
             .attr("dy", ".35em")
             .attr("font-weight", "bold")
-            .style("font-size", d => d.group === 1 ? "10px" : "12px") // Make households' label smaller
+            .style("font-size", d => d.group === 1 ? "10px" : "12px")
             .text(d => {
+            if (d.group === 1 || d.group === 3 || d.group === 4) {
+                return d.value;
+            } else {
                 const entityKey = d.id.split("_")[1];
                 return d.value + " " + entityUnits[entityKey];
+            }
             })
             .style("pointer-events", "none");
 
         const legend = g.append("g")
-            .attr("transform", "translate(" + (width - 150) + "," + 20 + ")");
+            .attr("transform", "translate(" + (width - 20) + "," + 50 + ")");
 
         legend.selectAll("rect")
             .data(Object.keys(entityColors))
@@ -141,7 +279,6 @@
             .attr("y", (d, i) => i * 20 + 12)
             .text(d => entityLabels[d]);
 
-
         function zoomed({ transform }) {
             g.attr("transform", transform);
         }
@@ -153,17 +290,17 @@
         svg.call(zoom);
 
         simulation.on("tick", () => {
-            link
+            link  // Update the position of the links
                 .attr("x1", d => d.source.x)
                 .attr("y1", d => d.source.y)
                 .attr("x2", d => d.target.x)
                 .attr("y2", d => d.target.y);
 
-            node
+            node  // Update the position of the nodes
                 .attr("cx", d => d.x)
                 .attr("cy", d => d.y);
 
-            labels
+            labels  // Update the position and text content of the labels
                 .attr("x", d => d.x)
                 .attr("y", d => d.y)
                 .text(d => {
@@ -175,7 +312,6 @@
                     }
                 });
         });
-
 
         function dragstarted(event, d) {
             if (!event.active) simulation.alphaTarget(0.3).restart();
@@ -189,9 +325,9 @@
         }
 
         function dragended(event, d) {
-        if (!event.active) simulation.alphaTarget(0);
-        d.fx = null;
-        d.fy = null;
+            if (!event.active) simulation.alphaTarget(0);
+            d.fx = null;
+            d.fy = null;
         }
 
         function entity_data(data) {
@@ -207,6 +343,7 @@
             });
         }
 
+
         function update_data() {
             console.log('Schematic File - Fetching data...');
             fetch('/fetch_data')
@@ -219,6 +356,8 @@
 
                     // Process new data and update nodes and links
                     update_entity_data(data);
+
+                    update_microgrid_menu(data);
 
                     // Update the data for the link and node elements
                     link = link.data(links, d => d.source.id + "_" + d.target.id);
