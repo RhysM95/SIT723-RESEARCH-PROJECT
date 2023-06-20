@@ -54,21 +54,11 @@
             Object.keys(data).forEach(function(household) {
                 var household_data = data[household];
                 var traces = [];
-                var xValues = []; // Declare xValues array here
                 Object.keys(household_data).forEach(function(entity) {
                     var entity_data = household_data[entity];
                     console.log(`Plotting ${household} ${entity} data:`, entity_data);
-
-                    // Sort the data by timestamp in ascending order
-                    entity_data.sort(function(a, b) {
-                        return a[0] - b[0];
-                    });
-
-                    // Assign the sorted x-values to the xValues array
-                    xValues = entity_data.map(point => new Date(point[0] * 1000).toLocaleString('en-US', { timeZone: 'Australia/Melbourne', hour: '2-digit', minute: '2-digit', second: '2-digit' }));
-
                     var trace = {
-                        x: xValues,
+                        x: entity_data.map(point => new Date(point[0] * 1000).toLocaleString('en-US', { timeZone: 'Australia/Melbourne', hour: '2-digit', minute: '2-digit', second: '2-digit' })),
                         y: entity_data.map(point => point[1]),
                         mode: 'lines+markers',
                         marker: {
@@ -81,20 +71,13 @@
                 });
                 var layout = {
                     title: household,
-                    xaxis: {
-                        title: 'Time',
-                        type: 'category',
-                        categoryorder: 'array',
-                        categoryarray: xValues
-                    },
-                    yaxis: {title: 'Value'},
+                    xaxis: {title: 'Time'},
+                    yaxis: {title: 'Value',},
                     margin: {l: 50, r: 75, b: 105, t: 50},
                 };
                 Plotly.react(household, traces, layout);
             });
         }
-
-
 
         plot_data(households);
 

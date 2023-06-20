@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simulation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Smart Home Energy Monitoring Simulation</h1>
+
+    {% for household in households %}
+    <div class="household-container">
+        <h2>Household {{ loop.index }}</h2>
+        {% for entity in entities %}
+<div class="entity-container">
+    <div class="entity-chart" id="{{ household }}-{{ entity }}"></div>
+    <div class="entity-legend">
+        <div class="entity-color {% if entity == 'voltage' %}voltage{% elif entity == 'current' %}current{% elif entity == 'power' %}power{% elif entity == 'energy' %}energy{% else %}other{% endif %}"></div>
+        <div class="entity-label">{{ entity|capitalize }}</div>
+    </div>
+</div>
+{% endfor %}
+    </div>
+    {% endfor %}
+    <script>
+        var households = {{ data|tojson }};
+        
+        function plot_data(data) {
+            console.log('Plotting data:', data); // Add this line
+            Object.keys(data).forEach(function(household) {
+                var household_data = data[household];
+                Object.keys(household_data).forEach(function(entity) {
+                    var entity_data = household_data[entity];
+                    console.log(`Plotting ${household} ${entity} data:`, entity_data);
+                    var trace = {
+                        x: entity_data.map(point => new Date(point[0])),
+                        y: entity_data.map(point => point[1]),
+                        mode: 'lines+markers',
+                        marker: {
+                            size: 8,
+                            color: 'red' // Set the desired color or use a function to assign a color based on the entity
+                        },
+                        name: entity
+                    };
+                    var layout = {
+                        title: household + ' ' + entity,
+                        xaxis: {title: 'Time'},
+                        yaxis: {title: 'Value'},
+                        margin: {l: 50, r: 50, b: 50, t: 50},
+                    };
+                    Plotly.newPlot(household + '-' + entity, [trace], layout);
+                });
+            });
+        }
+        plot_data(households);
+    
+        function update_data() {
+            console.log('Fetching data...'); // Add this line
+            fetch('/fetch_data')
+                .then(response => {
+                    console.log('Received response:', response); // Add this line
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Fetched data:', data);
+                    plot_data(data);
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error); // Add this line
+                });
+        }
+    
+        setInterval(update_data, 10000);
+    </script>    
+</div>

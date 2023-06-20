@@ -19,9 +19,6 @@
     <div id="sidebar" onclick="toggleSidebar()">&#9776;</div>
     <div id="microgrid-menu">
         <div id="microgrid-menu-close" onclick="toggleSidebar()">&times;</div>
-        <button class="add-solar-btn" onclick="addSolarPanel(event.target)">+1</button>
-        <button class="remove-solar-btn" onclick="removeSolarPanel(event.target)">-1</button>
-        <div class="household-section" data-panels="1">
     </div>
     <div id="trend"></div>
     
@@ -147,16 +144,14 @@
                         const surplusDeficit = solarPV - power;
 
                         const solarPVElement = document.createElement("p");
-                        solarPVElement.innerHTML = "Solar PV: <span class='solar-pv-value'>" + solarPV + "</span> W"; // Change this line
+                        solarPVElement.innerText = "Solar PV: " + solarPV + " W";
                         householdDiv.appendChild(solarPVElement);
 
                         const powerElement = document.createElement("p");
                         powerElement.innerText = "Power: " + power + " W";
-                        powerElement.classList.add("power-value"); // Add this line
                         householdDiv.appendChild(powerElement);
 
                         const surplusDeficitElement = document.createElement("p");
-                        surplusDeficitElement.className = 'surplus-deficit'; // Add this line
                         surplusDeficitElement.innerText = surplusDeficit >= 0 ? "Surplus: " : "Deficit: ";
                         surplusDeficitElement.innerText += Math.abs(surplusDeficit).toFixed(2) + " W";
                         surplusDeficitElement.style.color = surplusDeficit >= 0 ? "green" : "red";
@@ -164,32 +159,10 @@
 
                         microgridDiv.appendChild(householdDiv);
 
-                        householdDiv.setAttribute('data-original-solar-pv', solarPV); // Add this line
-                        householdDiv.setAttribute('data-solar-panels', 1); // Add this line
-
                         // Add solar and power values to the corresponding microgrid total
                         const microgridId = i % 2 ? 'Microgrid 2' : 'Microgrid 1';
                         microgridTotals[microgridId].solar += parseFloat(solarPV);
                         microgridTotals[microgridId].power += parseFloat(power);
-
-                        // Add '+1' button
-                        const addSolarBtn = document.createElement("button");
-                        addSolarBtn.classList.add("add-solar-btn");
-                        addSolarBtn.innerText = "+1";
-                        addSolarBtn.onclick = () => addSolarPanel(householdDiv, microgrid); // Update this line
-                        householdDiv.appendChild(addSolarBtn);
-
-                        // Add '-1' button
-                        const removeSolarBtn = document.createElement("button");
-                        removeSolarBtn.classList.add("remove-solar-btn");
-                        removeSolarBtn.innerText = "-1";
-                        removeSolarBtn.onclick = () => removeSolarPanel(householdDiv, microgrid); // Update this line
-                        householdDiv.appendChild(removeSolarBtn);
-
-                        const panelCountElement = document.createElement("p");
-                        panelCountElement.classList.add("panel-count");
-                        panelCountElement.innerText = "Total Panels: 1"; // Assuming each household starts with 1 panel
-                        householdDiv.appendChild(panelCountElement);
                     }
                 });
             });
@@ -216,64 +189,10 @@
 
         update_microgrid_menu({{ data | tojson }});
 
-        // Toggle sidebar display
+        // Add this function to toggle sidebar display
         function toggleSidebar() {
             const microgridMenu = document.getElementById("microgrid-menu");
             microgridMenu.style.display = microgridMenu.style.display === "none" ? "block" : "none";
-        }
-
-        function addSolarPanel(householdElement) {
-            let solarPanels = parseInt(householdElement.getAttribute('data-solar-panels'));
-            solarPanels += 1;
-            householdElement.setAttribute('data-solar-panels', solarPanels);
-
-            updateSolarPV(householdElement);
-            updatePanelCount(householdElement);
-            updateSurplusDeficit(householdElement);
-        }
-
-        function removeSolarPanel(householdElement) {
-            let solarPanels = parseInt(householdElement.getAttribute('data-solar-panels'));
-            if (solarPanels > 0) {  // Ensure we don't go below zero solar panels
-                solarPanels -= 1;
-                householdElement.setAttribute('data-solar-panels', solarPanels);
-
-                updateSolarPV(householdElement);
-                updatePanelCount(householdElement);
-                updateSurplusDeficit(householdElement);
-            }
-        }
-
-        function updateSolarPV(householdElement) {
-            // Fetch the solar panel count and the original Solar PV value
-            const solarPanels = parseInt(householdElement.getAttribute('data-solar-panels'));
-            const originalSolarPV = parseFloat(householdElement.getAttribute('data-original-solar-pv'));
-
-            // Calculate the new Solar PV value based on the number of solar panels
-            const newSolarPV = originalSolarPV * solarPanels;
-
-            // Update the Solar PV value in the household's section
-            const solarPVElement = householdElement.querySelector('.solar-pv-value');
-            solarPVElement.innerText = newSolarPV.toFixed(2);
-        }
-
-        function updateSurplusDeficit(householdElement) {
-            // Fetch the solar PV value and the power value
-            const solarPV = parseFloat(householdElement.querySelector('.solar-pv-value').innerText);
-            const power = parseFloat(householdElement.querySelector('.power-value').textContent.split(': ')[1]); // Updated this line
-            const surplusDeficit = solarPV - power;
-
-            // Update the surplus/deficit value in the household's section
-            const surplusDeficitElement = householdElement.querySelector('.surplus-deficit');
-            surplusDeficitElement.innerText = surplusDeficit >= 0 ? "Surplus: " : "Deficit: ";
-            surplusDeficitElement.innerText += Math.abs(surplusDeficit).toFixed(2) + " W";
-            surplusDeficitElement.style.color = surplusDeficit >= 0 ? "green" : "red";
-        }
-
-        function updatePanelCount(householdElement) {
-            const solarPanels = parseInt(householdElement.getAttribute('data-solar-panels'));
-            const panelCountElement = householdElement.querySelector('.panel-count');
-            panelCountElement.innerText = "Total Panels: " + solarPanels;
         }
 
         const color = d3.scaleOrdinal(d3.schemeCategory10);

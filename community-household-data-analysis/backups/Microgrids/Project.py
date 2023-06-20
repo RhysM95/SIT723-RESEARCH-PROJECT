@@ -4,14 +4,11 @@ from flask import Flask, render_template, jsonify, request
 import dash
 from dash import dcc, html
 import time
-from datetime import datetime, timedelta
+from datetime import datetime
 
 app = Flask(__name__)
 dash_app = dash.Dash(__name__, server=app, url_base_pathname='/trend/')
 dash_app.layout = html.Div([])
-
-default_start_date = datetime.now() - timedelta(days=1) # 1 day ago from today
-default_end_date = datetime.now()
 
 api_url_base = 'https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa/api/states/'
 api_url_base_hist = 'https://9j0ph1l4vjsb4pyu1gnt0ennbnqapvik.ui.nabu.casa/api/history/period/{start_timestamp}+00:00?end_time={end_timestamp}%2B00%3A00&filter_entity_id='
@@ -46,13 +43,12 @@ def fetch_data():
     response_solar = requests.get(api_url_solar, headers=headers_solar)
     data_solar = response_solar.json()
     if 'state' in data_solar:
-    #     try:
-    #         solar_value = float(data_solar['state'])
-    #     except ValueError:  # Catch the exception when the value is 'unavailable' and set it to 0
-    #         solar_value = 0
-    # else:
-    #     solar_value = 0
-        solar_value = 15.2
+        try:
+            solar_value = float(data_solar['state'])
+        except ValueError:  # Catch the exception when the value is 'unavailable' and set it to 0
+            solar_value = 0
+    else:
+        solar_value = 0
 
     data_arrays['Household 1'] = aggregate_data(data_arrays['Household 1'], raw_data, current_timestamp)
 
@@ -129,7 +125,7 @@ def fetch_history_data(start_date, end_date):
                     timestamp = raw_data[entity][0][i][0]
                     combined_values.append((timestamp, combined_value))
         elif entity == 'Solar PV':  # Add this condition for 'Solar PV' data
-            if solar_hist_data:  # Check to ensure solar_hist_data is not empty
+            #if solar_hist_data:  # Check to ensure solar_hist_data is not empty
                 combined_values = solar_hist_data
 
         historical_data_arrays['Household 1'][entity] = combined_values
@@ -169,10 +165,7 @@ def history():
         data = fetch_history_data(start_date, end_date)
     else:
         # Use default dates if start and end dates are not provided
-        start_date = default_start_date
-        end_date = default_end_date
-
-    data = fetch_history_data(start_date, end_date)
+        data = fetch_history_data()
 
     selected_entities = entities
     return render_template('history.html', households=households, entities=entities, data=data, selected_entities=selected_entities, len=len, dash_app=dash_app)

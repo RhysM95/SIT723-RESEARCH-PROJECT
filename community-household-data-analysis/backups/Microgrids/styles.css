@@ -303,35 +303,6 @@ a:hover {
     margin-bottom: 10px;
 }
 
-.add-solar-btn, .remove-solar-btn {
-    margin: 5px;
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-}
-  
-.remove-solar-btn {
-    background-color: #f44336;
-}
-
-#simulation-mode-checkbox {
-    display: inline-block;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-#simulation-mode-checkbox + label {
-    display: inline-block;
-    margin-right: 20px;
-    vertical-align: middle;
-}
-
 /* Set responsive styles for screens with a width of 768px or less */
 @media screen and (max-width: 768px) {
     .simulation-container {

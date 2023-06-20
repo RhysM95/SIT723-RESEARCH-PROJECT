@@ -3,7 +3,6 @@ html, body {
     font-family: 'Roboto', sans-serif; /* Set font family */
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
 }
 
 /* Set default styles for heading elements */
@@ -14,11 +13,10 @@ h1, h2, h3 {
 
 /* Set styles for the title of the page */
 h1 {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 50px;
-    padding-top: 30px;
 }
 
 /* Set styles for the section headings */
@@ -199,137 +197,6 @@ flex-basis: calc(50% - 20px);
 /* Set styles for the trend chart */
 .trend-chart {
 margin-top: 30px;
-}
-
-/* Add box shadow to the SVG container */
-#schematic svg {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    background-color: #ffffff;
-}
-
-/* Add margin to the trend chart SVG */
-#trend svg {
-    margin-top: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    background-color: #ffffff;
-}
-
-/* Add styles for the link back to the simulation */
-a {
-    display: inline-block;
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 4px;
-    text-decoration: none;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Change styles on hover */
-a:hover {
-    background-color: #3f8a41;
-}
-
-/* Set styles for the navigation menu */
-.nav-menu {
-    display: flex;
-    justify-content: space-around;
-    background-color: #4CAF50;
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-  
-/* Set styles for the navigation links */
-.nav-menu a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0 10px;
-}
-  
-/* Set styles for the navigation links on hover */
-.nav-menu a:hover {
-    color: #f1f1f1;
-    text-decoration: underline;
-}
-
-/* Add these styles for the sidebar tab and menu */
-#sidebar {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-#microgrid-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 350px;
-    height: 100%;
-    background-color: #f8f8f8;
-    padding: 20px;
-    border-right: 1px solid #ccc;
-    overflow-y: auto;
-    display: none;
-}
-
-.microgrid-section {
-    display: inline-flex;
-    flex-direction: column;
-    width: 48%;
-    margin-right: 2%;
-    margin-bottom: 20px;
-}
-
-.household-section {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.microgrid-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.total-box {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.add-solar-btn, .remove-solar-btn {
-    margin: 5px;
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-}
-  
-.remove-solar-btn {
-    background-color: #f44336;
-}
-
-#simulation-mode-checkbox {
-    display: inline-block;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-#simulation-mode-checkbox + label {
-    display: inline-block;
-    margin-right: 20px;
-    vertical-align: middle;
 }
 
 /* Set responsive styles for screens with a width of 768px or less */

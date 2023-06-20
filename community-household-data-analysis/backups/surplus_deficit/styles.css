@@ -316,21 +316,10 @@ a:hover {
     cursor: pointer;
 }
   
-.remove-solar-btn {
+ .remove-solar-btn {
     background-color: #f44336;
 }
-
-#simulation-mode-checkbox {
-    display: inline-block;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-#simulation-mode-checkbox + label {
-    display: inline-block;
-    margin-right: 20px;
-    vertical-align: middle;
-}
+  
 
 /* Set responsive styles for screens with a width of 768px or less */
 @media screen and (max-width: 768px) {
